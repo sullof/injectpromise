@@ -17,7 +17,7 @@ class SomeClass {
         if (!callback)
             return this.injectPromise(this.getCurrent);
 
-        return callSomething
+        callSomething
             .then(result => {
             callback(null, result);
         }).catch(err => callback(err));
