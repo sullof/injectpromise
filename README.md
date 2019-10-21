@@ -4,14 +4,12 @@ A minimalistic package to insert a promise instead of using a callback.
 
 ### Usage
 
-```javascript
-
-const injectPromise = require('injectpromise')
+```
 
 class SomeClass {
 
     constructor() {
-        this.injectPromise = injectPromise(this);
+        this.injectPromise = require('injectpromise')(this);
     }
 
     async getCurrent(callback = false) {
